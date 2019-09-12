@@ -16,3 +16,7 @@
 // });
 
 Route::get('/', 'PageController@index')->name('home');
+Route::get('/form/vegetable', 'VegetableController@index')->name('form.vegetable');
+Route::post('/vegetable', 'VegetableController@store');
+Route::get('/vegetable', 'VegetableController@show');
+Route::post('/vegetable/{id}', 'VegetableController@update');
